@@ -1,16 +1,26 @@
 #include <iostream>
 #include <vector>
 #include "UtilityFunctions.cpp"
-using namespace std;
 
 int main(int argc, char *argv[])
 {
-    vector<int> g1;
+    // Product Function Demonstration
+    std::vector<int> g1;
     for (int i = 1; i < 3; i++)
     {
         g1.push_back(i);
     }
-    cout << Product(g1) << endl;
+    std::cout << "Result from Product: " << Product(g1) << std::endl;
+  
+    // Sum Function Demonstration
+    std::vector<int> vec;
+    for (int i = 0; i < 10; ++i)
+    {
+      vec.push_back(i);
+    }
 
+    int result = Sum(vec);
+
+    std::cout <<"Result of Sum is: " << result << std::endl;
     return 0;
 }
